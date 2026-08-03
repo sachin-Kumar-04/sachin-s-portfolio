@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected work — a vertical reel of motion, design, and digital experiences." />
+    <title>Work — Sachin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="work-page">
+      <header class="site-header">
+        <a class="brand" href="../" aria-label="Back to home">Sachin Kumar<span>.</span></a>
+        <p class="eyebrow">Selected work / 2024—25</p>
+        <a class="contact-link" href="https://wa.me/919877512387" target="_blank" rel="noopener noreferrer">Let's talk <span>↗</span></a>
+      </header>
+
+      <div class="top-banner">
+        <picture>
+          <source media="(max-width: 650px)" srcset="./sachin-graphic-mob.png" />
+          <img src="./sachin-graphic-desk.png" alt="Sachin Kumar — graphic designer" />
+        </picture>
+      </div>
+
+      <section class="work-intro" aria-labelledby="work-title">
+        <div>
+          <p class="eyebrow accent">01 / Work</p>
+          <h1 id="work-title">View my<br /><em>latest works.</em></h1>
+        </div>
+        <p class="intro-copy">A moving selection of identities, interfaces, and worlds built for people who want to leave a mark.</p>
+      </section>
+
+      <div class="video-grid" id="video-grid" aria-label="Selected work videos"></div>
+
+      <section class="static-work-section" aria-labelledby="static-work-title">
+        <div class="static-work-heading">
+          <p class="eyebrow accent">Selected posts</p>
+          <h2 id="static-work-title">Some of my<br /><em>static work.</em></h2>
+        </div>
+        <div class="image-slider" aria-label="Selected still images">
+          <div class="image-slider-track" id="image-slider-track"></div>
+          <button class="image-slider-button image-slider-previous" id="image-previous" type="button" aria-label="Previous image">←</button>
+          <button class="image-slider-button image-slider-next" id="image-next" type="button" aria-label="Next image">→</button>
+        </div>
+      </section>
+
+      <section class="skills-section" aria-labelledby="skills-title">
+        <div class="skills-heading">
+          <p class="eyebrow accent">02 / Capabilities</p>
+          <h2 id="skills-title">A toolkit for<br /><em>making meaning.</em></h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-block skill-block-wide">
+            <p class="mono">Core practice</p>
+            <h3>Design &amp; direction</h3>
+            <p class="skill-copy">Building identities, interfaces, and visual worlds that feel clear, considered, and alive.</p>
+            <div class="skill-tags"><span>Art direction</span><span>Brand identity</span><span>Digital design</span><span>Creative strategy</span></div>
+          </article>
+          <article class="skill-block">
+            <p class="mono">Soft skills</p>
+            <div class="skill-list"><span>Collaboration</span><span>Critical thinking</span><span>Communication</span><span>Time management</span></div>
+          </article>
+          <article class="skill-block">
+            <p class="mono">Tools</p>
+            <div class="software-list">
+              <span class="software"><b class="software-icon figma">F</b>Figma</span><span class="software"><b class="software-icon adobe">Ps</b>Photoshop</span>
+              <span class="software"><b class="software-icon after-effects">Ae</b>After Effects</span><span class="software"><b class="software-icon illustrator">Ai</b>Illustrator</span>
+              <span class="software"><b class="software-icon premiere">Pr</b>Premiere Pro</span><span class="software"><b class="software-icon indesign">Id</b>InDesign</span>
+              <span class="software"><b class="software-icon davinci">Dv</b>DaVinci Resolve</span>
+            </div>
+          </article>
+          <article class="skill-block">
+            <p class="mono">Practice</p>
+            <div class="skill-list"><span>Visual identity</span><span>Motion design</span><span>UI/UX design</span><span>Web design</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="brands-section" aria-labelledby="brands-title">
+        <p class="eyebrow accent" id="brands-title">Brands I've worked with</p>
+        <div class="brands-marquee">
+          <div class="brands-track" id="brands-track"></div>
+        </div>
+      </section>
+
+      <section class="details-section" aria-label="Education, experience, and contact information">
+        <div class="details-copy">
+          <p class="eyebrow accent">Education</p>
+          <h2>Diploma in Design<br />and Multimedia.</h2>
+          <p class="eyebrow accent details-label">Experience</p>
+          <p class="details-text">3 years as a graphic designer<br />and video editor.</p>
+        </div>
+        <div class="contact-details">
+          <p class="eyebrow">Get in touch</p>
+          <a href="https://www.instagram.com/dristiframe/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a>
+          <a href="https://wa.me/919877512387" target="_blank" rel="noopener noreferrer">WhatsApp <span>↗</span></a>
+          <a href="tel:+919877512387">+91 98775 12387 <span>↗</span></a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span class="mono">Based in india / working globally</span>
+        <span class="mono">Scroll for more ↓</span>
+      </footer>
+    </main>
+
+    <div class="video-modal" id="video-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Expanded project video">
+      <button class="video-modal-close" id="video-modal-close" aria-label="Close video">×</button>
+      <video id="expanded-video" controls playsinline></video>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
