@@ -74,10 +74,10 @@ h1 em { color: var(--orange); font-family: Georgia, serif; font-weight: 400; let
 .celebrity-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .celebrity-grid img { aspect-ratio: 4 / 5; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
 .youtube-section { border-top: 1px solid var(--line); margin: 0 auto clamp(90px, 14vh, 160px); max-width: 1300px; padding-top: 18px; }
-.youtube-heading h2 { margin: 55px 0 42px -4px; }
+.youtube-heading h2 { margin: 34px 0 28px -4px; }
 .youtube-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
 .youtube-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.youtube-grid video { aspect-ratio: 16 / 9; background: #303b30; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
+.youtube-grid video { aspect-ratio: 2 / 1; background: #303b30; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
 h2 { font-size: clamp(1.2rem, 2.1vw, 2rem); font-weight: 600; letter-spacing: -.08em; line-height: .9; margin: 0; }
 h2 span { font-family: Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -.12em; }
 .slide-detail { font-size: .66rem; line-height: 1.35; margin: 14px 0 0; }
@@ -144,7 +144,7 @@ body.modal-open { overflow: hidden; }
   .celebrity-copy { margin: 0 0 30px; max-width: 280px; }
   .celebrity-grid { gap: 12px; }
   .celebrity-grid img { border-radius: 14px; }
-  .youtube-heading h2 { margin: 42px 0 30px; }
+  .youtube-heading h2 { margin: 28px 0 22px; }
   .youtube-grid { gap: 12px; grid-template-columns: 1fr; }
   .youtube-grid video { border-radius: 14px; }
   .image-slider-button { align-items: center; background: rgba(238,234,227,.92); border: 1px solid var(--line); border-radius: 50%; color: var(--ink); display: flex; height: 34px; justify-content: center; position: absolute; top: 50%; transform: translateY(-50%); width: 34px; z-index: 3; }
