@@ -6,7 +6,12 @@ const videoModal = document.querySelector('#video-modal');
 const expandedVideo = document.querySelector('#expanded-video');
 const closeVideoButton = document.querySelector('#video-modal-close');
 
-const videoSources = Array.from({ length: 9 }, (_, index) => `./video${index + 1}.mp4`);
+const videoSources = [
+  './video1.mp4', './video2.mp4', './video3.mp4',
+  './video4.mp4', './video5.mp4', './video6.mp4',
+  './video7.mp4', './video8.mp4', './video9.mp4',
+  './video10.mp4', './video11.mp4', './video13.mp4'
+];
 const imageSources = [
   '10img.jpeg', '11img.jpeg', '12img.jpeg', '13.jpeg', '14.jpeg',
   '1img.jpeg', '2img.jpeg.jpeg', '3img.jpeg.jpeg', '4img.jpeg', '5img.jpeg',
