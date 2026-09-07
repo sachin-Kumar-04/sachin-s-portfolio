@@ -68,6 +68,11 @@ h1 em { color: var(--orange); font-family: Georgia, serif; font-weight: 400; let
 .celebrity-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
 .celebrity-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .celebrity-grid img { aspect-ratio: 4 / 5; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
+.youtube-section { align-items: start; border-top: 1px solid var(--line); display: grid; gap: clamp(24px, 3vw, 44px); grid-template-columns: .62fr 1.38fr; margin: 0 auto clamp(90px, 14vh, 160px); max-width: 1300px; padding-top: 18px; }
+.youtube-heading h2 { font-size: clamp(2.8rem, 5vw, 5.4rem); letter-spacing: -.09em; line-height: .82; margin: 55px 0 0 -4px; }
+.youtube-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
+.youtube-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.youtube-grid video { aspect-ratio: 9 / 16; background: #303b30; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
 h2 { font-size: clamp(1.2rem, 2.1vw, 2rem); font-weight: 600; letter-spacing: -.08em; line-height: .9; margin: 0; }
 h2 span { font-family: Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -.12em; }
 .slide-detail { font-size: .66rem; line-height: 1.35; margin: 14px 0 0; }
@@ -132,6 +137,10 @@ body.modal-open { overflow: hidden; }
   .celebrity-heading h2 { margin: 42px 0 30px; }
   .celebrity-grid { gap: 12px; }
   .celebrity-grid img { border-radius: 14px; }
+  .youtube-section { display: block; }
+  .youtube-heading h2 { margin: 42px 0 30px; }
+  .youtube-grid { gap: 12px; }
+  .youtube-grid video { border-radius: 14px; }
   .image-slider-button { align-items: center; background: rgba(238,234,227,.92); border: 1px solid var(--line); border-radius: 50%; color: var(--ink); display: flex; height: 34px; justify-content: center; position: absolute; top: 50%; transform: translateY(-50%); width: 34px; z-index: 3; }
   .image-slider-previous { left: 1px; }
   .image-slider-next { right: 1px; }
