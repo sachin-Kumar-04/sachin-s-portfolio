@@ -5,6 +5,7 @@
   --line: rgba(23, 24, 23, .16);
   --lime: #d7ff4b;
   --orange: #ff6438;
+  --section-heading-size: clamp(2.8rem, 5vw, 5.4rem);
 }
 
 * { box-sizing: border-box; }
@@ -29,7 +30,8 @@ h1 { font-size: clamp(4.5rem, 8.6vw, 9rem); font-weight: 500; letter-spacing: -.
 h1 em { color: var(--orange); font-family: Georgia, serif; font-weight: 400; letter-spacing: -.12em; }
 .intro-copy { color: #52534d; font-size: clamp(.9rem, 1.3vw, 1.08rem); line-height: 1.55; margin: 0 4% 6px 0; max-width: 280px; }
 .skills-section { border-top: 1px solid var(--line); display: grid; gap: clamp(36px, 8vw, 130px); grid-template-columns: .8fr 1.2fr; margin: 0 auto clamp(110px, 16vh, 190px); max-width: 1300px; padding-top: 18px; }
-.skills-heading h2 { font-size: clamp(2.8rem, 5vw, 5.4rem); letter-spacing: -.09em; line-height: .82; margin: 55px 0 0 -4px; }
+.skills-heading h2, .static-work-heading h2, .celebrity-heading h2, .youtube-heading h2, .details-copy h2 { font-size: var(--section-heading-size); letter-spacing: -.09em; line-height: .82; }
+.skills-heading h2 { margin: 55px 0 0 -4px; }
 .skills-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
 .skills-grid { display: grid; gap: 1px; grid-template-columns: repeat(2, 1fr); }
 .skill-block { border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); min-height: 170px; padding: 24px 24px; }
@@ -56,7 +58,7 @@ h1 em { color: var(--orange); font-family: Georgia, serif; font-weight: 400; let
 .slide-overlay { display: none; }
 .slide-open { background: transparent; border: 0; cursor: pointer; inset: 0; padding: 0; position: absolute; z-index: 2; }
 .static-work-section { align-items: start; display: grid; gap: clamp(24px, 3vw, 44px); grid-template-columns: .62fr 1.38fr; margin: 0 auto clamp(72px, 10vh, 110px); max-width: 1300px; }
-.static-work-heading h2 { font-size: clamp(2.8rem, 5vw, 5.4rem); letter-spacing: -.09em; line-height: .82; margin: 55px 0 0 -4px; }
+.static-work-heading h2 { margin: 55px 0 0 -4px; }
 .static-work-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
 .image-slider { min-width: 0; overflow: hidden; position: relative; }
 .image-slider-track { display: flex; gap: 18px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; }
@@ -64,15 +66,18 @@ h1 em { color: var(--orange); font-family: Georgia, serif; font-weight: 400; let
 .image-slide { height:450px; background: #e5e3df; border-radius: 18px; flex: 0 0 calc((100% - 36px) / 3); object-fit: cover; scroll-snap-align: start; width: 100%; }
 .image-slider-button { display: none; }
 .celebrity-section { border-top: 1px solid var(--line); margin: 0 auto clamp(90px, 14vh, 160px); max-width: 1300px; padding-top: 18px; }
-.celebrity-heading h2 { font-size: clamp(2.8rem, 5vw, 5.4rem); letter-spacing: -.09em; line-height: .82; margin: 55px 0 42px -4px; }
+.celebrity-heading { display: grid; grid-template-columns: 1fr 1fr; }
+.celebrity-heading > .eyebrow { grid-column: 1 / -1; }
+.celebrity-heading h2 { margin: 55px 0 42px -4px; }
 .celebrity-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
+.celebrity-copy { align-self: end; color: #52534d; font-size: clamp(.9rem, 1.3vw, 1.08rem); line-height: 1.55; margin: 0 0 48px 12%; max-width: 360px; }
 .celebrity-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .celebrity-grid img { aspect-ratio: 4 / 5; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
 .youtube-section { border-top: 1px solid var(--line); margin: 0 auto clamp(90px, 14vh, 160px); max-width: 1300px; padding-top: 18px; }
-.youtube-heading h2 { font-size: clamp(2.8rem, 5vw, 5.4rem); letter-spacing: -.09em; line-height: .82; margin: 55px 0 42px -4px; }
+.youtube-heading h2 { margin: 55px 0 42px -4px; }
 .youtube-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
 .youtube-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.youtube-grid video { aspect-ratio: 9 / 16; background: #303b30; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
+.youtube-grid video { aspect-ratio: 16 / 9; background: #303b30; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
 h2 { font-size: clamp(1.2rem, 2.1vw, 2rem); font-weight: 600; letter-spacing: -.08em; line-height: .9; margin: 0; }
 h2 span { font-family: Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -.12em; }
 .slide-detail { font-size: .66rem; line-height: 1.35; margin: 14px 0 0; }
@@ -93,7 +98,7 @@ body.modal-open { overflow: hidden; }
 @keyframes brands-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .details-section { display: grid; grid-template-columns: 1.1fr .9fr; margin: 0 auto 86px; max-width: 1300px; min-height: 330px; }
 .details-copy { border: 1px solid var(--line); padding: 26px 30px 34px; }
-.details-copy h2 { font-size: clamp(2.2rem, 4.2vw, 4.6rem); font-weight: 500; letter-spacing: -.09em; line-height: .88; margin: 58px 0 36px; }
+.details-copy h2 { font-weight: 500; margin: 58px 0 36px; }
 .details-label { margin-top: 30px; }
 .details-text { color: #52534d; font-size: .95rem; line-height: 1.5; margin: 14px 0 0; }
 .contact-details { background: var(--orange); color: var(--ink); display: flex; flex-direction: column; justify-content: center; padding: 36px clamp(28px, 5vw, 70px); }
@@ -134,11 +139,13 @@ body.modal-open { overflow: hidden; }
   .contact-details { padding: 30px 16px; }
   .static-work-section { display: block; }
   .static-work-heading h2 { margin: 0 0 36px; }
+  .celebrity-heading { display: block; }
   .celebrity-heading h2 { margin: 42px 0 30px; }
+  .celebrity-copy { margin: 0 0 30px; max-width: 280px; }
   .celebrity-grid { gap: 12px; }
   .celebrity-grid img { border-radius: 14px; }
   .youtube-heading h2 { margin: 42px 0 30px; }
-  .youtube-grid { gap: 12px; }
+  .youtube-grid { gap: 12px; grid-template-columns: 1fr; }
   .youtube-grid video { border-radius: 14px; }
   .image-slider-button { align-items: center; background: rgba(238,234,227,.92); border: 1px solid var(--line); border-radius: 50%; color: var(--ink); display: flex; height: 34px; justify-content: center; position: absolute; top: 50%; transform: translateY(-50%); width: 34px; z-index: 3; }
   .image-slider-previous { left: 1px; }
