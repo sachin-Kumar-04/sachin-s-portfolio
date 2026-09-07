@@ -70,7 +70,7 @@ button { color: inherit; font: inherit; }
 .celebrity-heading > .eyebrow { grid-column: 1 / -1; }
 .celebrity-heading h2 { margin: 55px 0 42px -4px; }
 .celebrity-heading h2 em { color: var(--orange); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
-.celebrity-copy { align-self: end; color: #52534d; font-size: 14px; line-height: 1.55; margin: 0 0 48px 12%; max-width: 360px; }
+.celebrity-copy { align-self: end; color: #52534d; font-size: 14px; line-height: 1.55; margin: 0 0 48px auto; max-width: 360px; text-align: right; }
 .celebrity-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .celebrity-grid img { aspect-ratio: 4 / 5; border-radius: 18px; display: block; object-fit: cover; width: 100%; }
 .youtube-section { border-top: 1px solid var(--line); margin: 0 auto clamp(90px, 14vh, 160px); max-width: 1300px; padding-top: 18px; }
@@ -111,7 +111,11 @@ body.modal-open { overflow: hidden; }
   .work-page { padding: 22px 20px 20px; }
   .site-header .eyebrow { display: none; }
   .work-intro { align-items: start; flex-direction: column; gap: 28px; margin: 90px 0 36px; }
-  .work-title { font-size: 18vw; }
+  .work-title,
+  .skills-heading h2,
+  .static-work-heading h2,
+  .celebrity-heading h2,
+  .youtube-heading h2 { font-size: 2.8rem; }
   .intro-copy { margin: 0; max-width: inherit;font-size: 14px; line-height: 1.4;}
   .skills-section { display: block; margin-bottom: 90px; }
   .skills-heading h2 { margin: 45px 0 42px; }
@@ -141,8 +145,8 @@ body.modal-open { overflow: hidden; }
   .static-work-section { display: block; }
   .static-work-heading h2 { margin: 0 0 36px; }
   .celebrity-heading { display: block; }
-  .celebrity-heading h2 { font-size: 18vw; margin: 42px 0 30px; }
-  .celebrity-copy { margin: 0 0 30px; max-width: 280px; }
+  .celebrity-heading h2 { margin: 42px 0 30px; }
+  .celebrity-copy { margin: 0 0 30px; max-width: none; text-align: left; width: 100%; }
   .celebrity-section { margin-bottom: 36px; }
   .work-intro { margin-top: 36px; }
   .celebrity-grid { gap: 12px; }
